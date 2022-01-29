@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!-- Tablas, thead cabecera de la tabla:  tr es una fila, th son columnas
+    tbody : cuerpo de la table y se encuentra los tr y td-->
+    <h1>Tablas</h1>
+    <table border="1" bgcolor="#eab676">
+
+        <thead>
+            <tr>
+                <th bgcolor="#eeeee4">Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>dirección</th>
+                <th>Celular</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Pepe</td>
+                <td bgcolor="#eeeee4">Zea</td>
+                <td>Pepe@gmail.com</td>
+                <td>Av 1</td>
+                <td>9999999</td>
+            </tr>
+            <tr>
+                <td bgcolor="#eeeee4">Murci</td>
+                <td>Elago</td>
+                <td bgcolor="#eeeee4">mur@gmail.com</td>
+                <td>Av 1</td>
+                <td>88888</td>
+            </tr>
+            <tr>
+                <td>Murci2</td>
+                <td bgcolor="#eeeee4">Elago2</td>
+                <td>mur2@gmail.com</td>
+                <td>Av 1</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!-- ROWSPAN:horizontal Y COLSPAN:vertical: Para que ocupen un espacio, combinar -->
+    <h2>Tabla de alumnos</h2>
+    <table border="1" bgcolor="#eab676">
+        <thead>
+            <tr>
+                <th bgcolor="#eeeee4">Curso</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ingles</td>
+                <td>Pepe</td>
+                <td>Zea</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Matt</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Mate</td>
+                <td>Pepe</td>
+                <td>Zea</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Matt</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Matt</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Matt</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Física</td>
+                <td colspan="2">Pepe Zapata</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="2">Pepe Zapata</td>
+                <td>Pepe@gmail.com</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</body>
+
+</html>
