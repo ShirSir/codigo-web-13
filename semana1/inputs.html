@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs</title>
+</head>
+
+<body>
+    <h1>Tipos de inputs</h1>
+    <!-- Es una caja que ùede tener texto, 
+        numeros, fechas, colores, archivos, checkbox, radiobutton  value="murcielago"-->
+    <input type="text" placeholder="Ingrese su nombre" name="nombre" id="mi_nombre" />
+    <input type="text" placeholder="Ingrese su apellido" name="apellido" id="mi_apellido" />
+    <!-- Input numérico -->
+    <h2>Input number</h2>
+    <input type="number" placeholder="Ingrese su edad" name="edad" id="mi_edad" />
+
+    <!-- Input email y password -->
+    <h2>Input de email y password</h2>
+    <input type="email" placeholder="Ingrese su correo" id="mi_correo" />
+    <input type="password" placeholder="Ingrese su password" name="password" id="mi_password" />
+    <!-- Input tipo submit, como botón tiene send o enviar -->
+    <input type="submit" value="Ingresar" />
+    <!-- Input de tipo fecha y hora -->
+    <h2> Input de tipo fecha y hora</h2>
+    <input type="date" />
+    <input type="time" />
+    <input type="datetime-local" />
+    <!-- Regex patrones de textos:mayusculas y minusculas... -->
+    <!-- Inputs de tipos archivos -->
+    <h2>Input de tipo archivo</h2>
+    <p>Todos los archivos</p>
+    <input type="file">
+    <p>Solo pdf</p>
+    <input type="file" accept="application/pdf" />
+    <!-- ipunt only image -->
+    <p>Solo imagenes</p>
+    <input type="file" accept="image/*" />
+    <p>Solo audios</p>
+    <input type="file" accept="audio/*" />
+    <p>Solo videos</p>
+    <input type="file" accept="video/*" />
+    <!-- Input de tipo radio -checkbox -->
+    <h2>Input de radio-checkbox</h2>
+    <!-- En los radio solo una opcion, checked dejar por defecto marcada una opción  -->
+    <p>
+        <input type="radio" name="opcion_registro" />Radio 1
+        <br/>
+        <input type="radio" name="opcion_registro" checked />Radio 2
+        <br/>
+        <input type="radio" name="opcion_registro" />Radio 3
+        <br/>
+    </p>
+    <!-- Checkbox:opcion multiple, [] indica que se puede enviar más de un elemento-->
+    <p>Checkbox</p>
+    <p>
+        <input type="checkbox" name="opcion_check[]"/> Checkbox 1
+        <br/>
+        <input type="checkbox" name="opcion_check[]" checked/> Checkbox 2
+        <br/>
+        <input type="checkbox" name="opcion_check[]"/> Checkbox 3
+        <br/>
+    </p>
+    <!-- Colores -->
+    <h2>Input tipo color</h2>
+    <input type="color"/>
+    <h2>Input de tipo range:rango</h2>
+    <input type="range" />
+    <h2>Input de tipo search</h2>
+    <input type="search" placeholder="Ingrese su búsqueda"/>
+    <h2>Input telefonos</h2>
+    <input type="tel"/>
+    
+
+</body>
+
+</html>
