@@ -17,17 +17,104 @@ recopilar la informacón, poniendo metadatos, descripcion-->
     <meta name="twitter:title" content="Mi pagina web" />
     <meta name="twitter:description" content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS" />
     <meta name="twitter:image" content="https://media-exp1.licdn.com/dms/image/C4E1BAQEfNIXEf_JoKg/company-background_10000/0?e=2159024400&v=beta&t=PhtZQJ8QA5Wy2lQzlfJL166pSeK_i3q2qfkD-xOMCcc" />
+<link rel="stylesheet" href="./css/style.css">
 
 </head>
+<!-- Esta etiqueta nos permite escribir css dentro del html -->
+
+<!-- <style> -->
+    <!-- body { -->
+      <!-- ç  font-family: Arial, Helvetica, sans-serif; -->
+        <!-- } -->
+        <!-- h1 { -->
+            <!-- text-decoration: underline; -->
+        <!-- } -->
+<!-- </style> -->
 
 <body>
     <!--Subtítulos en el body, de h1 a h6-->
-    <h1>Inputs</h1>
-    <a href="./semana1/inputs.html">Links para inputs</a>
+    <div class="contenedor-principal">
+        <h1>Mi portafolio</h1>
+        <p>
+          Hola mi nombre es Shirley Sacasqui,  estoy
+          aprendiendo a programar en HTML, CSS y JS.
+        </p>
+        <img
+          src="./imagenes/Shirley.jpeg"
+          class="imagen-perfil"
+          alt=""
+          width="100"
+        />
+        <p>
+          <a class="btn-github" href="https://github.com/ShirSir/">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt=""
+              width="15"
+            />
+            GitHub
+          </a>
+        </p>
+      </div>
+    <!-- Listas en html -->
+    <!-- ul lista ordenada -->
+    <!-- <ol> -->
+        <!-- <li>Elemento</li>> -->
+    <!-- </ol> -->
+    <ul>
+        <li>
+          <h5>Semana 1</h5>
+          <img
+            src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+            alt="semana1"
+            width="100"
+          />
+        </li>
+        <li>
+          <h5>Semana 2</h5>
+          <img
+            src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+            alt="semana1"
+            width="100"
+          />
+        </li>
+      </ul>
+      <div>
+        <h3>Temas semana 1</h3>
+        <a class="link-referencia" href="./semana1/inputs.html"
+          >Link para inputs</a
+        >
+        <a class="link-referencia" href="./semana1/form.html"
+          >Link a formularios</a
+        >
+        <a class="link-referencia" href="./semana1/tablas.html">Link a Tablas</a>
+      </div>
+  
+      <div>
+        <h3>Temas semana 2</h3>
+        <a class="link-referencia" href="./semana2/index.html"
+          >Introducción a CSS</a
+        >
+      </div>
+    </body>
+  </html>
+
+
+
+
+
+
+  <!--
+    <a class="link-referencia" href="./semana1/inputs.html">Links para inputs</a>
     <h1>Formularios</h1>
-    <a href="./semana1/form.html"> Link de formularios</a>
+    <a class="link-referencia" href="./semana1/form.html"> Link a formularios</a>
     <h1>TABLAS</h1>
-    <a href="./semana1/tablas.html"> Link de tablas</a>
+    <a class="link-referencia" href="./semana1/tablas.html"> Link a tablas</a>
+<div>
+    <h3>Temas Semana 2</h3>
+
+</div>
+
 
     <h1>Mi primera pagina web-titulo 1</h1>
     <h2>titulo 2 </h2>
@@ -37,37 +124,38 @@ recopilar la informacón, poniendo metadatos, descripcion-->
     <h6>titulo 6</h6>
     <!-- Ocupan todo el ancho de una pantalla por default -->
     <!-- Etiqueta de parrafos -->
-    <p>Soy Shirley ...</p>
+   
+   <!-- <p>Soy Shirley ...</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         Iste consequuntur corrupti ipsum cumque unde, voluptatum consectetur at soluta
         libero eligendi tempora totam eos nihil modi accusamus rerum facilis est blanditiis!</p>
     <!-- Etiqueta negrita bold, resaltar, strong -->
-    Holi
+     <!--Holi
     <p>
         <b> soy Shirley Sacasqui</b>
         <strong>Soy yo</strong>
         <b>este es un bold</b>
         <strong>este es un strong</strong>
         <!-- Etiqueta cursiva -->
-        <i>es cursiva</i>
+        <!-- <i>es cursiva</i>
     </p>
     <!-- Subrayar textos u, cursiva i -->
-    <h4><u><i>Mis datos</i></u></h4>
+     <!--<h4><u><i>Mis datos</i></u></h4>
     <!-- br salto d elínea--no usar? -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+   <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
         Quam omnis inventore, iure ducimus ut qui porro, reprehenderit odio deleniti officia <br />
         repudiandae velit numquam asperiores vel, repellendus fugiat similique eaque eius. <br />
     </p>
     <!-- Para poder citar textos -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt veritatis eligendi blanditiis quasi
+     <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt veritatis eligendi blanditiis quasi
         esse. Qui recusandae omnis, unde nemo quidem odio sapiente eaque soluta, nam accusantium id ea inventore!</p>
     <blockquote>Texto de escritor</blockquote>
     <!-- Hipervinculos -->
-    <a href="https://www.elconfidencial.com/alma-corazon-vida/2021-09-09/solo-siete-rasgos-marcan-el-comportamiento-misterioso-de-los-gatos-que-tanto-intriga-a-los-humanos_3278946/"
+   <!-- <a href="https://www.elconfidencial.com/alma-corazon-vida/2021-09-09/solo-siete-rasgos-marcan-el-comportamiento-misterioso-de-los-gatos-que-tanto-intriga-a-los-humanos_3278946/"
         target="_blank">Link de mascotas</a>
     <!-- TAREA -->
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores tempore dolor distinctio architecto
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores tempore dolor distinctio architecto
         laboriosam, corrupti, reprehenderit vitae eius qui dolorum consectetur? Voluptas non nostrum hic velit adipisci
         quae <br />
         <a href="https://www.google.com.mx/" target="_blank">
@@ -89,28 +177,28 @@ recopilar la informacón, poniendo metadatos, descripcion-->
     </p>
     <!-- Etiquetas multimedia -->
     <!-- imagenes con img src para colocar con link, altdar el titulo a la foto, ancho width, alto height, -->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7guuPvCzzY_-yd4QWfb2mR47UTo0LBXqfHXwNwYhPAjyHOghW3Zipem23JtStaK-zC4&usqp=CAU"
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7guuPvCzzY_-yd4QWfb2mR47UTo0LBXqfHXwNwYhPAjyHOghW3Zipem23JtStaK-zC4&usqp=CAU"
         alt="cat" width="500" height="400">
     <!-- Colocando imánes locales e la pc -->
-    <img src="./imagenes/cat_prueba.jpg" alt="foto_local" width="500" height="400">
+    <!-- <img src="./imagenes/cat_prueba.jpg" alt="foto_local" width="500" height="400">
     <!-- Imagen con hipervinculo -->
-    <a a href="https://www.youtube.com/watch?v=MN4DQ_Vd0nE" target="_blank">
+   <!--  <a a href="https://www.youtube.com/watch?v=MN4DQ_Vd0nE" target="_blank">
         <img src="./imagenes/cat_prueba.jpg" alt="foto_local" width="500" height="400">
     </a>
     <!-- Etiquetas de vídeos , video con source, agregar controls, se puede usar autoplay-->
-    <video controls autoplay muted width="700" height="500">
+     <!--<video controls autoplay muted width="700" height="500">
         <source src="./videos/video.mp4" />
     </video>
     <!-- Audio mp3,wav,ogg -->
-    <audio controls autoplay muted>
+    <!-- <audio controls autoplay muted>
         <source src="./audios/audio.mp3" />
     </audio>
     <!-- iframe:etiqueta reproduce archivos de todo tipo -->
-    <iframe src="./pdf/pdfejm.pdf" width="700" height="700">
+    <!-- <iframe src="./pdf/pdfejm.pdf" width="700" height="700">
     </iframe>
 
     <!-- <iframe width="660" height="415" src="https://www.youtube.com/embed/NMYRd7DvjrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     <!-- <iframe src="./pdf/Foca_Shirley.stl" width="700" height="500"></iframe> -->
-</body>
+ <!--</body>
 
-</html>
+</html> 

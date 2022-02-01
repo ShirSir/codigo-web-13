@@ -1,0 +1,140 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    color: red;
+    background-color: wheat;
+}
+h2{
+    background-color: aqua;
+    color: rgb(160,238,179);
+}
+/*
+p {
+    
+    color: rgb(34,182,66);
+}*/
+a {
+    color: pink;
+    background-color: yellowgreen ;
+}
+
+/*La forma correcta en la cual enlazamos un id, es usando el # */
+#contenedor-uno {
+    background-color: violet;
+}
+#contenedor-dos {
+    background-color: yellow;
+}
+#contenedor-tres {
+    background-color: aquamarine;
+}
+/*  Para acceder a un elemento usamos . en class */
+/* Se puede reutilizar el class */
+/* padding: espacio de adentro hacia afuera */
+
+.contenedor-principal {
+    background-color: rgb(230, 141, 141);
+    padding: 30px;
+}
+
+.btn-ingresar {
+      
+    color:rgb(10, 10, 10);
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-registro {
+    background-color: cornflowerblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+   /* padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color:#fff;*/
+}
+/* Se pueden compartir estilos */
+.contenedor-form {
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    
+}
+.contenedor-interno-form {
+    padding: 20px;
+    /* Se realiza de forma horizontal */
+    text-align: center;
+}
+.titulo-form {
+    background-color: rgb(255, 255, 255);
+    color: darkcyan;
+}
+.input-form {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 400px;
+
+}
+.input-codigo {
+width: 100px;
+}
+.input-numero {
+    width: 265px;
+}
+.btn-crear-usuario {
+    background-color: darkcyan;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    border: none;
+    padding: 10px;
+    width: 430px;
+    
+}
+.btn-crear-usuario:hover {
+    background-color: coral;
+    color: crimson;
+    
+}
+
+/* El input codigo mida 100px */
+/* Los elementos tienen propiedades internas, hover 
+ es el elemento cuando el mouse está sobre ele elemento */
+ .btn-ingresar {
+    background-color: darkcyan;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    border: none;
+    padding: 10px;
+    width: 430px;
+    text-decoration: none;
+ }
+ .btn-ingresar:hover {
+    background-color: coral;
+    color: crimson;
+     text-decoration: none;
+     padding: 100px;
+ }
+ /* Los elementos que tienen pseudoclases son: 
+link, visited,hover, active se aplican
+a todos los elemento de html */
+div:hover {
+    background-color: rgb(85, 201, 201);
+}
+
+.contenedor-interno-form h1 {
+    border: 2px solid rgb(11, 86, 99);
+}
+/* A todos los p, si sóloa uno p:first-child */
+
+h1:first-child {
+ color: purple;
+}
+
+input:first-of-type {
+    color: red;
+}
