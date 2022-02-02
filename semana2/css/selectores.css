@@ -1,0 +1,36 @@
+
+/* "* =todo" */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor p {
+    color:brown;
+}
+
+.contenedor-dos h2 {
+    color: coral;
+}
+
+.contenedor-tres a img {
+    border: 2px solid greenyellow;
+}
+.menu-navegacion {
+    margin: 20px;
+}
+/* Se aplica cuando cuando son hijos antivos */
+/* ul > li {
+    border: 2px solid aquamarine;
+} */
+.link-navegacion {
+    border: 2px solid salmon;
+}
+input[type="email"] {
+    background-color: rgb(158, 154, 152);
+}
+input[type="password"] {
+    background-color: rgb(233, 192, 171);
+}

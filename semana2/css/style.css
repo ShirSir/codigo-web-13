@@ -1,140 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Helvetica;
-}
-
-h1 {
-    color: red;
-    background-color: wheat;
-}
-h2{
-    background-color: aqua;
-    color: rgb(160,238,179);
-}
-/*
-p {
-    
-    color: rgb(34,182,66);
-}*/
-a {
+  }
+  
+  h1 {
+    background-color: #000;
+    color: #f01;
+  }
+  
+  h2 {
+    background-color: #22e8dc;
+    color: rgb(160, 238, 179);
+  }
+  
+  a {
+    background-color: yellowgreen;
     color: pink;
-    background-color: yellowgreen ;
-}
-
-/*La forma correcta en la cual enlazamos un id, es usando el # */
-#contenedor-uno {
+  }
+  
+  /* La forma correcto en la
+  cual enlaces un id es css es
+  usando el # */
+  
+  /* un id se usa cuando se
+  tiene un estilo especifico para un 
+  solo elemento */
+  #contenedor-uno {
+    background-color: #09a;
+  }
+  
+  /* reto al contenedor-dos poner 
+  un fondo amarillo */
+  
+  /* Para poder compartir estilos
+  debemos usar clases 'class' */
+  
+  /* Para poder acceder aun elemento 
+  que tiene un class usamos el . */
+  .contenedor-principal {
     background-color: violet;
-}
-#contenedor-dos {
-    background-color: yellow;
-}
-#contenedor-tres {
-    background-color: aquamarine;
-}
-/*  Para acceder a un elemento usamos . en class */
-/* Se puede reutilizar el class */
-/* padding: espacio de adentro hacia afuera */
-
-.contenedor-principal {
-    background-color: rgb(230, 141, 141);
     padding: 30px;
-}
-
-.btn-ingresar {
-      
-    color:rgb(10, 10, 10);
+  }
+  
+  .btn-ingresar {
+    background-color: rgb(14, 139, 255);
+    color: #fff;
     padding: 10px;
     border-radius: 8px;
     border: none;
-}
-
-.btn-registro {
-    background-color: cornflowerblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-   /* padding: 10px;
+  }
+  
+  /* sepan que cuando se usas clases se 
+  pueden compartir estilos */
+  
+  .btn-registro {
+    font-size: 25px;
+    background-color: red;
+  }
+  
+  .contenedor-form {
+    /* border que cubra */
+    border: 3px solid rgb(255, 136, 0);
     border-radius: 8px;
-    border: none;
-    color:#fff;*/
-}
-/* Se pueden compartir estilos */
-.contenedor-form {
-    border: 2px solid darkcyan;
-    border-radius: 8px;
-    
-}
-.contenedor-interno-form {
+  }
+  
+  .contenedor-interno-form {
     padding: 20px;
-    /* Se realiza de forma horizontal */
+    /* left: izquierda */
+    /* center: centro */
+    /* right: derecha */
+    /* esto lo de hace de forma horizontal */
     text-align: center;
-}
-.titulo-form {
-    background-color: rgb(255, 255, 255);
-    color: darkcyan;
-}
-.input-form {
-    padding: 15px;
+  }
+  
+  .titulo-form {
+    color: rgb(14, 139, 255);
+    background-color: #fff;
+  }
+  
+  .input-form {
+    padding: 10px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px #000 solid;
     width: 400px;
-
-}
-.input-codigo {
-width: 100px;
-}
-.input-numero {
-    width: 265px;
-}
-.btn-crear-usuario {
-    background-color: darkcyan;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 1px solid black;
+  }
+  
+  /* retos para el profe 
+  quiero que el iput del codigo 
+  mida 100px */
+  
+  .input-codigo {
+    width: 100px;
+  }
+  
+  .input-numero {
+    width: 275px;
+  }
+  
+  /* reto para ustedes denle estilos
+  al boton */
+  
+  .btn-crear-usuario {
+    background-color: rgb(248, 156, 35);
+    color: #000;
+    padding: 8px;
+    border-radius: 6px;
     border: none;
-    padding: 10px;
-    width: 430px;
-    
-}
-.btn-crear-usuario:hover {
-    background-color: coral;
-    color: crimson;
-    
-}
-
-/* El input codigo mida 100px */
-/* Los elementos tienen propiedades internas, hover 
- es el elemento cuando el mouse está sobre ele elemento */
- .btn-ingresar {
-    background-color: darkcyan;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 1px solid black;
-    border: none;
-    padding: 10px;
-    width: 430px;
+  }
+  
+  /* PSEUDOCLASES */
+  /* Los elementos tienen propiedades
+  internas por ejemplo el hover
+  hover: es la propiedad que detecta
+  cuando el mouse esta sobre el elemento,
+  es decir estos estilos se aplicaran
+  solo si el mouse esta sobre dicho element */
+  
+  .btn-crear-usuario:hover {
+    background-color: rgb(105, 218, 111);
+  }
+  
+  .btn-ingresar:hover {
+    background-color: #f01;
+    color: #000;
+    /* quita el subrayado */
     text-decoration: none;
- }
- .btn-ingresar:hover {
-    background-color: coral;
-    color: crimson;
-     text-decoration: none;
-     padding: 100px;
- }
- /* Los elementos que tienen pseudoclases son: 
-link, visited,hover, active se aplican
-a todos los elemento de html */
-div:hover {
-    background-color: rgb(85, 201, 201);
-}
-
-.contenedor-interno-form h1 {
-    border: 2px solid rgb(11, 86, 99);
-}
-/* A todos los p, si sóloa uno p:first-child */
-
-h1:first-child {
- color: purple;
-}
-
-input:first-of-type {
-    color: red;
-}
+    padding: 50px;
+  }
+  
+  /* los elementos como el tienen pseudoclases
+  como
+  link
+  visited
+  hover
+  active */
+  
+  /* Estas pseudoclases aplican para
+  todos elementos de html */
+  
+  /* div:hover {
+    background-color: #f01;
+  } */
+  
+  .contenedor-interno-form h1 {
+    border: 2px solid #000;
+  }
+  
+  /* first-child */
+  /* Busca el primero elemento */
+  /* <h1>  </h1> */
+  /* <h1>  </h1> */
+  /* <h1>  </h1> */
+  /* <h1>  </h1> */
+  /* <h1>  </h1> */
+  
+  h1:first-child {
+    color: purple;
+  }
+  
+  input:first-of-type {
+    color: #f01;
+  }
+  
+  h2:nth-child(0) {
+    color: #000;
+  }
+  /* 
+  .contenedor-interno-form p:nth-child(2) {
+    border: 1px #f01 solid;
+  } */
