@@ -1,18 +1,193 @@
-<!--Primera prueba html-->
+<!-- ESTRUCTURA DE HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- SEO: Va a contener diferentes etiquetas se indexen en un navegador
-recopilar la informacón, poniendo metadatos, descripcion-->
+  <!-- Va a contener la etiquetas pero el SEO -->
   <meta charset="utf-8" />
+  <meta name="description" content="Esta página es donde estoy aprendiendo HTML, CSS y JS" />
+  <meta name="robots" content="" />
+  <meta name="googlebot" content="" />
+  <meta name="keywords" content="Shirley Sacasqui, HTML, CSS, JS, CODIGO" />
+  <title>Mi portafolio</title>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@s_sacasqui" />
+  <meta name="twitter:title" content="Mi portafolio" />
+  <meta name="twitter:description" content="Recopilación de mi portafolio, donde estoy aprendiendo HTML, CSS y JS" />
+  <meta name="twitter:image"
+    content="https://media-exp1.licdn.com/dms/image/C4E1BAQEfNIXEf_JoKg/company-background_10000/0?e=2159024400&v=beta&t=PhtZQJ8QA5Wy2lQzlfJL166pSeK_i3q2qfkD-xOMCcc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Patrick+Hand&family=Playfair+Display&family=Quintessential&family=Yellowtail&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</head>
+<!-- esta etiqueta nos permite escribir css dentro de un html -->
+
+<body>
+
+  <header class="header">
+  
+    <nav class="nav">
+      <ul>
+        <li>
+          <a class="hover" href=""> <i  class="fas fa-briefcase" style="color:black"> </i>Works</a>
+        </li>
+        <li>
+          <a class="hover"  href=""> <i class="fab fa-blogger-b" style="color:black"></i>Blog</a>
+        </li>
+        <li>
+          <a class="hover" href=""> <i class="fas fa-id-badge" style="color:black" ></i>Contact</a>
+        </li>
+      </ul>
+      </nav> 
+
+  </header>
+  <hr />
+
+  <section class="banner">
+        <div class="div-uno" >
+      <h1 class="title">Hola, soy Shirley</h1>
+      <h1 class="title">Estoy aprendiendo</h1>
+      <p class="resume">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <button class="btn-primary"><strong>Download Resume</strong> </button>
+    </div>
+    <div>
+      <img class="img-profile" src="./imagenes/Shirley.jpeg" alt="" />
+    </div>
+  </section>
+
+  <section>
+    <div class="section-works">
+      <h4 class="text-works"> <strong>Features works</strong> </h4>
+
+
+      <!-- <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto1.html">
+            <img src="./imagenes/portafolio/nft.png" alt="" />
+          
+          
+          
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto1.html">
+            <img src="./imagenes/reto1/" alt="" />
+            <h2>Reto 1 - NFT Design</h2>
+          </a>
+
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr /> -->
+
+
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto1.html">
+            <img src="./imagenes/reto1/active-states.jpg" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto1.html">
+            <h2>Reto 1 - Card</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+
+
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto2.html">
+            <img src="./imagenes/reto2/desktop-preview.jpg" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto2.html">
+            <h2>Reto 2 - Build The Community</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+
+
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto3.html">
+            <img src="./imagenes/reto3/active-states.jpg" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto3.html">
+            <h2>Reto 3 - Comments</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+</body>
+
+</html>
+
+<!-- 
+  <!--Primera prueba html-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head> -->
+<!-- SEO: Va a contener diferentes etiquetas se indexen en un navegador
+recopilar la informacón, poniendo metadatos, descripcion-->
+<!-- <meta charset="utf-8" />
   <meta name="description" content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS" />
   <meta name="robots" content="" />
   <meta name="googlebot" content="" />
   <meta name="keywords" content="ShirSac, HTML, CSS, JS, CODIGO" />
-  <title>Codigo Front 13</title>
-  <!-- Whatsapp, facebook, twiter -->
-  <meta name="twitter:card" content="summary" />
+  <title>Codigo Front 13</title> -->
+<!-- Whatsapp, facebook, twiter -->
+<!-- <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@s_sacasqui" />
   <meta name="twitter:title" content="Mi pagina web" />
   <meta name="twitter:description" content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS" />
@@ -20,7 +195,7 @@ recopilar la informacón, poniendo metadatos, descripcion-->
     content="https://media-exp1.licdn.com/dms/image/C4E1BAQEfNIXEf_JoKg/company-background_10000/0?e=2159024400&v=beta&t=PhtZQJ8QA5Wy2lQzlfJL166pSeK_i3q2qfkD-xOMCcc" />
   <link rel="stylesheet" href="./css/style.css">
 
-</head>
+</head> -->
 <!-- Esta etiqueta nos permite escribir css dentro del html -->
 
 <!-- <style> -->
@@ -32,7 +207,7 @@ recopilar la informacón, poniendo metadatos, descripcion-->
 <!-- } -->
 <!-- </style> -->
 
-<body>
+<!-- <body>
   <div class="contenedor-principal">
     <h1>Mi portafolio</h1>
     <p>
@@ -49,16 +224,16 @@ recopilar la informacón, poniendo metadatos, descripcion-->
     <img width="600" src="https://sutilweb.com/wp-content/uploads/2021/08/Lenguajes-de-programacion.jpg" alt=""
       class="imagen-programador" />
 
-  </div>
-  <!-- Listas en html -->
-  <!-- ul lista ordenada -->
-  <!-- <ol> -->
-  <!-- <li>Elemento</li>> -->
-  <!-- </ol> -->
-  
-  <section class="contenedor-clases">
+  </div> -->
+<!-- Listas en html -->
+<!-- ul lista ordenada -->
+<!-- <ol> -->
+<!-- <li>Elemento</li>> -->
+<!-- </ol> -->
+
+<!-- <section class="contenedor-clases">
     <!--Subtítulos en el body, de h1 a h6-->
-    <ul class="lista-semanas">
+<!-- <ul class="lista-semanas">
       <li>
         <h5>Semana 1</h5>
         <img src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png" alt="semana1" width="100" />
@@ -80,12 +255,12 @@ recopilar la informacón, poniendo metadatos, descripcion-->
       <a class="link-referencia" href="./semana2/index.html">Introducción a CSS</a>
     </div>
   </section>
-</body>
+</body> -->
 
-</html>
+<!-- </html> -->
 
-
-
+<!-- portafolio -->
+-->
 
 
 

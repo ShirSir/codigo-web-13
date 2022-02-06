@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 2px;
   padding: 2px;
 }
@@ -22,12 +22,12 @@ body {
 .contenedor-principal {
     text-align: center;
     height: 60vh;
-  }
+  } */
   /* .contenedor-principal p {
   font-size: 18px;
   width: 400px;
 } */
-.contenedor-clases {
+/* .contenedor-clases {
   height: 100vh;
   background-color: rgb(230, 202, 113);
 }
@@ -59,12 +59,12 @@ h3 {
       border-radius: 30%;
       border: 2px solid #000;
       
-  }
+  } */
 
   /* .imagen-perfil:hover {
     background-color: slateblue;
 } */
-.btn-github {
+/* .btn-github {
   border: 2px solid #000;
   border-radius: 8px;
   padding: 10px;
@@ -75,4 +75,166 @@ h3 {
 .imagen-programador {
   border-radius: 12px;
   margin-top: 20px;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+/*  */
+/* .header {
+  display: flex; */
+  /* flex-start
+    center
+    flex-end */
+  /* justify-content: flex-end;
+} */
+.header {
+  display: flex;
+  justify-content: flex-end;  
+
+}
+
+.hover:hover {
+  color: #8695a4;
+}
+
+
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul > li {
+  padding: 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.banner {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Patrick Hand", sans-serif ;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.resume {
+  width: 45%;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, rgba(180,108,58,1) 5%, rgba(253,188,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: rgb(2, 2, 2);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+}
+.div-uno {
+  background-color: #fcfcfc;
+  
+}
+
+
+.img-profile {
+  width: 240px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-works {
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+}
+
+.card div img {
+  width: 246px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-works {
+  font-size: 1em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.container-detail {
+  margin-left: 20px;
+}
+
+.container-detail p {
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+.label-dark {
+  background-color: #142850;
+  color: #fff;
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.text-light {
+  color: #8695a4;
+}
+
+hr {
+  height: 0.5px;
+  background-color: #e0e0e0;
+  border: 0.5px solid #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.link-portafolio {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-portafolio:hover {
+  color: #ff6464;
+  text-decoration: underline;
 }

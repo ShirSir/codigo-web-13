@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form{
+    border: solid gray;
+    padding: 50px;
+    border-radius: 8px;
+}
+.form h2{
+    letter-spacing: 2px;
+    color: rgb(10, 10, 153);
+}
+.inputform{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: solid gray;
+    border-radius: 8px;
+}
+.btnprimary{
+    margin-top: 20px;
+    padding: 10px;
+    width: 110%;
+    background-color: rgb(2, 2, 138);
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: ease-in 2s;
+}
+/* transform se usa para cambiar el estado de la propiedad */
+.btnprimary:hover{
+    background-color: rgb(120, 77, 238);    
+}
+
+.container-help {
+    transition: ease-in 1s;
+  }
+  
+  .text-help {
+    display: none;
+    max-width: 300px;
+    min-width: 300px;
+    transition: ease-in 1s;
+  }
+  
+  .button-help {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .container-help:hover + .text-help {
+    display: block !important;
+    /* transform: scale(1.3); */
+  }
